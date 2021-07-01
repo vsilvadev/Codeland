@@ -1,0 +1,23 @@
+.container {
+    background: var(--linear);
+    padding: 1rem;
+
+    header {
+        max-width: 900px;
+        margin: 0 auto;
+
+        .topHeader {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 2.5rem;
+        }
+    
+        input {
+            width: 100%;
+            font-size: 1.5rem;
+        }
+    }
+
+    
+}
+

@@ -8,7 +8,7 @@ export function Header() {
                     <h1>Codeland</h1>
                     <h1>Blog</h1>
                 </div>  
-                <input type="text" placeholder="Pesquisar post" className={styles.input} />
+                <input type="text" placeholder="Pesquisar publicação" className={styles.input} />
             </header>
         </div>
     );

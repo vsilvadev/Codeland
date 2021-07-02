@@ -9,12 +9,34 @@
         .topHeader {
             display: flex;
             justify-content: space-between;
-            margin-bottom: 2.5rem;
+            margin-bottom: 3rem;
+
+            h1 {
+                font-size: 1.8rem;
+                font-weight: bold;
+                color: var(--white);
+            }
         }
     
         input {
             width: 100%;
-            font-size: 1.5rem;
+            padding: 0.5rem 3.5rem;
+            margin-bottom: 1.5rem;
+
+            background-color: rgba(255, 255, 255, 0.2);
+            background-image: url(../../images/lupa.svg);
+            background-repeat: no-repeat; 
+            background-position: 0.5rem;
+            background-size: 2.5rem;
+
+            color: var(--white);
+            font-size: 1.3rem;
+            border: none;
+
+            &::placeholder {
+                color: rgba(255, 255, 255, 0.404);
+            }
+            
         }
     }
 

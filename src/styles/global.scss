@@ -10,19 +10,15 @@
     --white: #FFF;
   
     --title: #313131;
-    --text: #B6B6B6;
+    --text: #A8A7A7;
     
     --linear: linear-gradient(90deg, #574AE8 0%, #3EA1DB 100%);
   }
 
-h1 {
+h1, title {
     font-family: 'Lexend Deca', sans-serif;
 }
 
-h2 {
-    font-family: 'Inter' 500, sans-serif;
-}
-
-p {
-    font-family: 'Inter' 400, sans-serif;
+h2, p, span {
+    font-family: 'Inter', sans-serif;
 }

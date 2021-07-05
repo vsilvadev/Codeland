@@ -50,18 +50,28 @@
 }
 
 @media (min-width: 1025px) and (max-width: 1280px) {
-  
+    .container {
+        .postContainer {
+            max-width: 90%;
+            margin: 0rem auto 3rem auto;
+        }
+    }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  
+    .container {
+        .postContainer {
+            max-width: 90%;
+            margin: 0rem auto 3rem auto;
+        }
+    }
 }
 
 //Arrumar pra 700px ou dividir os tamanhos por causa da diferença
-@media (min-width: 482px) and (max-width: 767px) {
+@media (min-width: 481px) and (max-width: 767px) {
     .container {
         .postContainer {
-            max-width: 400px;
+            max-width: 90%;
             margin: 0rem auto 3rem auto;
         }
     }
@@ -72,7 +82,7 @@
         padding-top: 1.5rem;
 
         .postContainer {
-            max-width: 80%;
+            max-width: 90%;
             margin: 1rem auto 3rem auto;
         }
     }

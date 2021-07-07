@@ -37,12 +37,14 @@
                 color: var(--text);
             }
             
-            p {
+            button {
+                background: none;
+                border: none;
                 color:var(--blue-dark);
                 font-size: 1.5rem;
             }
 
-            p:hover {
+            button:hover {
                 cursor: pointer;
             }
         }

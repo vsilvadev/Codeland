@@ -1,6 +1,13 @@
-.container {
-    background: var(--linear);
+#container {
     padding: 1rem;
+
+    &.light {
+        background: var(--linear);
+    }
+
+    &.dark {
+        background: var(--linear-dark);
+    }
 
     header {
         max-width: 1000px;

@@ -3,7 +3,6 @@ import {AiFillHeart, AiOutlineHeart} from "react-icons/ai";
 import { useState } from "react";
 import { useTheme } from "../../hooks/useTheme";
 
-
 export function PreviewPosts() {
     let postsTemplate = [
         {

@@ -10,7 +10,7 @@ export function Header() {
         <div id={styles.container} className={theme ==="light" ? styles.light : styles.dark}>
             <header>
                 <div className={styles.topHeader}>
-                    <h1>Codeland - {theme}</h1>
+                    <h1>Codeland</h1>
                     <div className={styles.rightSide}>
                         <h1>Blog</h1>
 

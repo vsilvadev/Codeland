@@ -1,6 +1,8 @@
 import styles from"./styles.module.scss";
 import {AiFillHeart, AiOutlineHeart} from "react-icons/ai";
 import { useState } from "react";
+import { useTheme } from "../../hooks/useTheme";
+
 
 export function PreviewPosts() {
     let postsTemplate = [
@@ -22,6 +24,7 @@ export function PreviewPosts() {
     ]
 
     const [posts, setPosts] = useState(postsTemplate);    
+    const {theme} = useTheme();
 
     function handleLikes(id: number) {
         const newPosts = posts.map(post => {
@@ -38,7 +41,7 @@ export function PreviewPosts() {
     }
 
     return (
-        <div className={styles.container}>
+        <div id={styles.container} className={theme ==="light" ? styles.light : styles.dark}>
             {posts.map(post => {
                 return(
                     <article className={styles.postContainer}>

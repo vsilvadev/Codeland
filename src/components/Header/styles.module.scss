@@ -2,11 +2,33 @@
     padding: 1rem;
 
     &.light {
-        background: var(--linear);
+         background: var(--linear);
+
+         header {
+            .topHeader {
+                .rightSide {
+                    button {
+                        transition: 1s;
+                    }
+                }
+            }
+        }
     }
 
     &.dark {
         background: var(--linear-dark);
+
+        header {
+            .topHeader {
+                .rightSide {
+                    button {
+                        transition: 1s;
+                        background: var(--white);
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
     }
 
     header {

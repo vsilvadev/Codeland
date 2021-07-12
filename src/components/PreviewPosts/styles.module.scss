@@ -1,7 +1,33 @@
-.container {
-    background-color: #F3F5F7;
+#container {
     padding-top: 3rem;
     padding-bottom: 0.5rem;
+
+    &.light {
+        transition: 1s;
+        background: #F3F5F7;
+    }
+
+    &.dark {
+        transition: 1s;
+        background: #0f0a36;
+
+        .postContainer {
+            transition: 1s;
+            background: #100d27;
+
+            h1 {
+                transition: 1s;
+                color: var(--white);
+            }
+
+            .topContainer {
+                button {
+                    color: var(--white);
+                }
+            }
+
+        }
+    }
 
     .postContainer {
         max-width: 1000px;
@@ -13,12 +39,16 @@
         border-radius: 0.25rem;
         box-shadow: 0 0 3px rgb(0 0 0 / 10%);
 
+        transition: 1s;
+
         h1 {
             margin-bottom: 0.5rem;
 
             font-size: 1.6rem;
             font-weight: 400;
             color: var(--title);
+
+            transition: 1s;
         }
 
         p {
@@ -52,7 +82,7 @@
 }
 
 @media (min-width: 1025px) and (max-width: 1280px) {
-    .container {
+    #container {
         .postContainer {
             max-width: 90%;
             margin: 0rem auto 3rem auto;
@@ -61,7 +91,7 @@
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-    .container {
+    #container {
         .postContainer {
             max-width: 90%;
             margin: 0rem auto 3rem auto;
@@ -69,9 +99,8 @@
     }
 }
 
-//Arrumar pra 700px ou dividir os tamanhos por causa da diferença
 @media (min-width: 481px) and (max-width: 767px) {
-    .container {
+    #container {
         .postContainer {
             max-width: 90%;
             margin: 0rem auto 3rem auto;
@@ -80,7 +109,7 @@
 }
 
 @media (min-width:320px) and (max-width: 480px) {
-    .container {
+    #container {
         padding-top: 1.5rem;
 
         .postContainer {

@@ -43,7 +43,7 @@ export function PreviewPosts() {
         <div id={styles.container} className={theme ==="light" ? styles.light : styles.dark}>
             {posts.map(post => {
                 return(
-                    <article className={styles.postContainer}>
+                    <article key={post.id} className={styles.postContainer}>
                         <div className={styles.topContainer}>
                             <span>02 de jul, 2021</span>
                             <button onClick={() => handleLikes(post.id)}>{post.likeStatus ? <AiFillHeart/> : <AiOutlineHeart/>}</button>

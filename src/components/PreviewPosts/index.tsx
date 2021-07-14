@@ -1,10 +1,11 @@
 import styles from"./styles.module.scss";
 import {AiFillHeart, AiOutlineHeart} from "react-icons/ai";
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import { useTheme } from "../../hooks/useTheme";
+import { useSearch } from "../../hooks/useSearch";
 
-export function PreviewPosts() {
-    let postsTemplate = [
+export function PreviewPosts() { 
+    const postsTemplate = [
         {
             id: 1,
             title: "Titulo 1",
@@ -12,18 +13,24 @@ export function PreviewPosts() {
         },
         {
             id: 2,
-            title: "Titulo 2",
+            title: "Teste 2",
             likeStatus: false,
         },
         {
             id: 3,
-            title: "Titulo 3",
+            title: "Fim 3",
             likeStatus: false,
         }
-    ]
+    ];
 
-    const [posts, setPosts] = useState(postsTemplate);    
     const {theme} = useTheme();
+    const {input} = useSearch();
+    const [posts, setPosts] = useState(postsTemplate);
+
+    const filterPosts = useMemo(() => {
+        const lowerInput = input.toLowerCase();
+        return posts.filter((post) => post.title.toLowerCase().includes(lowerInput));
+    }, [input, posts])
 
     function handleLikes(id: number) {
         const newPosts = posts.map(post => {
@@ -41,7 +48,7 @@ export function PreviewPosts() {
 
     return (
         <div id={styles.container} className={theme ==="light" ? styles.light : styles.dark}>
-            {posts.map(post => {
+            {filterPosts.map(post => {
                 return(
                     <article key={post.id} className={styles.postContainer}>
                         <div className={styles.topContainer}>

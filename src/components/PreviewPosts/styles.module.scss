@@ -1,6 +1,7 @@
 #container {
     padding-top: 3rem;
-    padding-bottom: 0.5rem;
+    padding-bottom: 0.5rem;        
+    min-height: 75vh;
 
     &.light {
         transition: 1s;

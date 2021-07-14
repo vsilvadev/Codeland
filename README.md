@@ -16,7 +16,7 @@
   • <a href="#author">Author</a> <br>
 
 <h2>🚀 Project Status<a name="project_status"></a></h2>
-⚠️ Missing Search Mechanism
+ ✅ Completed
 
 <h2>💡 Features<a name="features"></a></h2>
 

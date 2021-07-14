@@ -63,11 +63,6 @@ $ cd codeland
 $ yarn 
 </pre>
 
-<h4>Run the back-end fake server</h4>
-<pre>
-$ yarn server
-</pre>
-
 <h4>Run the application</h4>
 <pre>
 $ yarn start

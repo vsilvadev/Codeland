@@ -10,7 +10,6 @@
   • <a href="#title">Title</a> <br>
   • <a href="#project_status">Project Status</a> <br>
   • <a href="#features">Features</a> <br>
-  • <a href="#future-features">Future Features</a> <br>
   • <a href="#application">The Application</a> <br>
   • <a href="#how-to">How To Run</a> <br>
   • <a href="#tech">Technologies</a> <br>
@@ -21,12 +20,9 @@
 
 <h2>💡 Features<a name="features"></a></h2>
 
-- [x] Dark Mode 
-- [x] Responsiveness
-
-<h2>📌 Future Features<a name="future-features"></a></h2>
-
-- [ ] Search Mechanism
+- [X] Dark Mode 
+- [X] Responsiveness
+- [X] Search Mechanism
 
 <h2>🖥 The Application<a name="application"></a></h2>
 <img src="https://github.com/vsilvadev/Codeland/blob/main/github_images/codeland.gif" alt="Running Application">
